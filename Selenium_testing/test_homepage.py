@@ -19,7 +19,7 @@ class LoginPageTests(unittest.TestCase):
         self.assertTrue(self.driver.find_element(By.NAME, "password"))
 
     def test_TC002_valid_login(self):
-        self.driver.get("http://localhost/Visitormanagement/index.php")
+        self.driver.get("hhttp://localhost/Visitormanagement/index.php")
         self.driver.find_element(By.NAME, "username").send_keys("admin")  # Replace with valid user
         self.driver.find_element(By.NAME, "password").send_keys("12345")
         self.driver.find_element(By.NAME, "login").click()
